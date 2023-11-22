@@ -1,0 +1,25 @@
+DROP TABLE IF EXISTS post;
+DROP TABLE IF EXISTS tokens;
+DROP TABLE IF EXISTS user_account;
+
+CREATE TABLE post (
+    post_id INT GENERATED ALWAYS AS IDENTITY,
+    title VARCHAR (100) NOT NULL,
+    content VARCHAR (500) NOT NULL,
+    PRIMARY KEY (post_id)
+);
+
+CREATE TABLE user_account (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    username VARCHAR(30) UNIQUE NOT NULL,
+    password CHAR(60) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE tokens(
+    id INT GENERATED ALWAYS AS IDENTITY,
+    user_id INT NOT NULL, 
+    token CHAR(36) UNIQUE NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (user_id) REFERENCES user_account(id)
+);
