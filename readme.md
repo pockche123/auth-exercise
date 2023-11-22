@@ -30,7 +30,7 @@ Follow the steps below to get the app up and running on your local machine.
 
    ```bash
    git clone https://github.com/pockche123/auth-exercise.git && cd api
-```
+   ```
 
 2. Setup Config file 
 
