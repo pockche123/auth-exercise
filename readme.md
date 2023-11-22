@@ -26,22 +26,22 @@ Follow the steps below to get the app up and running on your local machine.
 
 ### Installation
 
-1. Clone the repository and cd :
-
-   ```bash
+1. Clone the repository and cd:  
+```bash
    git clone https://github.com/pockche123/auth-exercise.git && cd api
-   ```
+ ```
 
 2. Setup Config file 
 
- -Setup your db url from [ElephantSQl](https://customer.elephantsql.com). (For starters, [click here](https://www.elephantsql.com/docs/index.html
-)for a guide.) 
- -Create a **.env file** withn the **api** file
+ - Setup your db url from [ElephantSQl](https://customer.elephantsql.com). (For starters, [click here](https://www.elephantsql.com/docs/index.html
+)for a guide.)   
+ - Create a **.env file** withn the **api** file
  
 ```bash
   PORT= 
   DB_URL=
   BCRYPT_SALT_ROUNDS=
+```
 
 3. Install required npm dependencies
 
